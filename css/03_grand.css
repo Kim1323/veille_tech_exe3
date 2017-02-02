@@ -1,1 +1,1 @@
-body{flex-direction:row;justify-content:space-between;align-items:center}.global{width:100%}header,main section,footer{width:960px}header img{display:block}header nav{display:flex;flex:1}header nav ul{display:flex;flex:1;flex-direction:row;justify-content:space-around}footer div:nth-child(3){font-size:3em}
+header img{display:block}header nav{display:flex;flex:1}header nav ul{display:flex;flex:1;flex-direction:row;justify-content:space-around}footer div:nth-child(3){font-size:3em}
