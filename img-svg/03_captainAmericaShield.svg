@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="500px" height="500px" xml:lang="fr"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+   <title>Captain America Shield</title>
+   
+  <circle cx="250" cy="250" r="250" fill="red" />
+  <circle cx="250" cy="250" r="200" fill="white" />
+  <circle cx="250" cy="250" r="150" fill="red" />
+  <circle cx="250" cy="250" r="100" fill="blue" />
+  <polygon points="250,150 188,330 343,215 157,215 312,330" style="fill:white;fill-rule:nonzero;"/>
+</svg>
