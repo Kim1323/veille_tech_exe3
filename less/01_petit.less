@@ -28,6 +28,9 @@
 @couleur-10 : mix(@couleur-base, @couleur-complementaire);
 
 
+@couleur_vert : rgba(0, 255, 0, .7);
+@couleur_rouge : rgba(255, 0, 0, .7);
+@couleur_bleu : rgba(0, 0, 255, .7);
 
 /* pour le debuggage on met une bordure autour de chacun des éléments 
 
@@ -41,36 +44,42 @@
 
 
 body{
-  width: 100%;
   display : flex;
   flex-direction: column;
-  font-family: arial;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 100%;
+  font-family: "Freckle Face";
+  margin-bottom: 400px;
+
   background-image: url("../images/parcautomne.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
   background-size:100% 100%;
+}
 
-  margin-bottom: 400px;
+header, section article, footer{
+  self-align: stretch;
 }
 
 .global{
-  display : flex;
-  justify-content: center;
-}
-div.global section:nth-child(even) {
-    article:nth-child(1) {background-color: blue;}
-    article:nth-child(2) {background-color: green;}
-    article:nth-child(3) {background-color: red;}
-    article:nth-child(4) {background-color: green;}
-    article:nth-child(5) {background-color: blue;}
-}
-div.global section:nth-child(odd) {
-    article:nth-child(1) {background-color: green;}
-    article:nth-child(2) {background-color: red;}
-    article:nth-child(3) {background-color: blue;}
-    article:nth-child(4) {background-color: red;}
-    article:nth-child(5) {background-color: green;}
+  &:nth-child(even) {
+    article:nth-child(1) {background-color: @couleur_vert;}
+    article:nth-child(2) {background-color: @couleur_rouge;}
+    article:nth-child(3) {background-color: @couleur_bleu;}
+    article:nth-child(4) {background-color: @couleur_rouge;}
+    article:nth-child(5) {background-color: @couleur_vert;}
+  }
+  &:nth-child(odd) {
+    article:nth-child(1) {background-color: @couleur_bleu;}
+    article:nth-child(2) {background-color: @couleur_vert;}
+    article:nth-child(3) {background-color: @couleur_rouge;}
+    article:nth-child(4) {background-color: @couleur_vert;}
+    article:nth-child(5) {background-color: @couleur_bleu;}
+  }
 }
 
 header, footer {
@@ -123,6 +132,7 @@ header{
     } // fin header  
 
 main{
+  width: 100%;
     display:flex;
     flex-direction:column;
     section{
@@ -130,6 +140,7 @@ main{
       flex-direction:column;
       justify-content:center;
       align-items:center;
+      width: 100%;
       article{
         display:flex;
         justify-content:center;
