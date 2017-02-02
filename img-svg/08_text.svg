@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
 "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-
 <svg width="500px" height="500px" xml:lang="fr"
 xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink">
-   <title>Ellipses</title>
-  <ellipse cx="140" cy="50" rx="110" ry="25" style="fill:purple" />
-  <ellipse cx="140" cy="40" rx="90" ry="20" style="fill:pink" />
-  <ellipse cx="140" cy="30" rx="70" ry="15" style="fill:red" />
+   <title>Text</title>
+  <text x="0" y="-100" font-size="100" fill="red" transform="rotate(80, 20,40)">
+  	Son,
+    <tspan x="0" y="-10">Just don't.</tspan>
+  </text>
 </svg>
