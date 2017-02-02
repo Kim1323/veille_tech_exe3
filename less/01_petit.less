@@ -41,14 +41,30 @@
 
 
 body{
+  width: 100%;
   display : flex;
   flex-direction: column;
   font-family: arial;
+  background-image: url("images/parcautomne.jpg");
 }
 
 .global{
   display : flex;
   justify-content: center;
+}
+div.global section:nth-child(even) {
+    article:nth-child(1) {background-color: blue;}
+    article:nth-child(2) {background-color: green;}
+    article:nth-child(3) {background-color: red;}
+    article:nth-child(4) {background-color: green;}
+    article:nth-child(5) {background-color: blue;}
+}
+div.global section:nth-child(odd) {
+    article:nth-child(1) {background-color: green;}
+    article:nth-child(2) {background-color: red;}
+    article:nth-child(3) {background-color: blue;}
+    article:nth-child(4) {background-color: red;}
+    article:nth-child(5) {background-color: green;}
 }
 
 header, footer {
@@ -118,16 +134,6 @@ main{
         font-size: @largeur_article;
       }
 
-      &:nth-child(even) {
-          article:nth-child(1) {background-color: blue;}
-          article:nth-child(2) {background-color: red;}
-          article:nth-child(3) {background-color: green;}
-      }
-      &:nth-child(odd) {
-          article:nth-child(1) {background-color: @couleur-8;}
-          article:nth-child(2) {background-color: @couleur-9;}
-          article:nth-child(3) {background-color: @couleur-10;}
-      }
       
     }
 }
