@@ -70,10 +70,20 @@ svg path {
   stroke: pink;
   fill: brown;
   stroke-width:1;
-  stroke-dasharray: 3;
-  stroke-dashoffset: 500;
-  animation: svg3 20s linear alternate infinite;
+  stroke-dasharray: 27;
+  stroke-dashoffset: 1000;
+  animation: svg3 1s linear alternate infinite;
 }
+
+.svg-9 path {
+  stroke: green;
+  stroke-width:1;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 1000;
+  animation: svg4 3s linear alternate infinite;
+}
+
+
 
 @keyframes svg1 {
   from {
@@ -97,9 +107,22 @@ svg path {
 
 @keyframes svg3 {
   from {
-    stroke-dashoffset: 50;
+    stroke-dashoffset: 0;
   }
   to {
+    stroke-dashoffset: 100;
+  }
+}
+
+
+@keyframes svg4 {
+  0% {
     stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 30;
+  }
+  100% {
+    stroke-dashoffset: 100;
   }
 }
