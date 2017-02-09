@@ -83,6 +83,14 @@ svg path {
   animation: svg4 3s linear alternate infinite;
 }
 
+.svg-10 path {
+  stroke: red;
+  fill:white;
+  stroke-width:1;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 1000;
+  animation: svg5 3s linear alternate infinite;
+}
 
 
 @keyframes svg1 {
@@ -121,6 +129,21 @@ svg path {
   }
   50% {
     stroke-dashoffset: 30;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes svg5 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 10;
+  }
+  50% {
+    stroke-dashoffset: 70;
   }
   100% {
     stroke-dashoffset: 100;
