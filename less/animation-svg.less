@@ -17,12 +17,14 @@ svg path {
   stroke-width:1;
   stroke-dasharray: 2;
   stroke-dashoffset: 1000;
-  animation: svg1 20s linear alternate infinite;
+  animation: svg1 20s ease-in alternate infinite;
 }
-.svg-2:hover path {
-  d: path("M5,6 S5,3 4,4 2,2");
+.svg-2 path {
   stroke: aquamarine;
-  transition: 1s;
+  stroke-width:1;
+  stroke-dasharray: 2;
+  stroke-dashoffset: 500;
+  animation: svg2 20s linear alternate infinite;
 }
 .svg-3:hover path {
   &:nth-child(1){ d: path("M2,2 L8,8"); }
@@ -67,7 +69,18 @@ svg path {
 
 @keyframes svg1 {
   from {
-    stroke-dashoffset: 1000;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 500;
+  }
+}
+
+
+
+@keyframes svg2 {
+  from {
+    stroke-dashoffset: 100;
   }
   to {
     stroke-dashoffset: 0;
